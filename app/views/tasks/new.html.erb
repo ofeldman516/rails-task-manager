@@ -1,0 +1,16 @@
+<%# <%= link_to "🔙", tasks_path %>
+
+<%# <%= link_to "🛠", restaurant_edit_path(@restaurant.id) %>
+<%#  %>
+<%# <%= link_to "🗑", restaurant_path(@restaurant), data: {turbo_method: :delete, turbo_confirm: "Are you sure"} %>
+<%# <h1><%= @task.name %></h1>
+<%# <h2>Rating: <%= @restaurant.rating %></h2>
+<%# <h2>Adddress 🗺: <%= @restaurant.address %> </h2>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>

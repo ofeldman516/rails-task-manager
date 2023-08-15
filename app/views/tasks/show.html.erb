@@ -1,0 +1,12 @@
+<%= link_to "Back to List", tasks_path %>
+
+<%# <%= link_to "🛠", restaurant_edit_path(@restaurant.id) %>
+<%#
+<%# <%= link_to "🗑", restaurant_path(@restaurant), data: {turbo_method: :delete, turbo_confirm: "Are you sure"} %>
+
+<h1><%= @task.title%></h1>
+<h2>Details: <%= @task.details %></h2>
+<%# <li><%= link_to 'Edit Task', tasks_path(:id)</li> %>
+<%# patch "tasks/:id", to: "tasks#update" %>
+
+<%= link_to "Edit Task", task_edit_path(@task.id) %>
